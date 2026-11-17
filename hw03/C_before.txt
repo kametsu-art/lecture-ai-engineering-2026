@@ -1,0 +1,13 @@
+[model] gemini-3.5-flash-lite
+**LoRA（Low-Rank Adaptation）**とは、事前学習済みの大規模言語モデル（LLM）などの重みを固定したまま、重みの更新分を2つの小さな低ランク行列の積で近似し、その小さな行列だけを学習するPEFT（Parameter-Efficient Fine-Tuning）の手法です。
+
+主な特徴として以下のような点があります。
+* 学習するパラメータ数が非常に少ないため、効率よくファインチューニングを行える。
+* 学習結果（アダプタ）を小さめのファイルサイズで保存できる。
+
+関係する回：第2回
+
+--- trace ---
+[tool call]   search_glossary({'query': 'LoRA'})
+[tool return] search_glossary -> [{"term": "LoRA", "lecture": 2, "definition": "事前学習済みの重みは固定したまま、重みの更新分を2つの小さな行列の積（低ランク行列）で表し、その小さな行列だけを学習するPEFT手法。学習するパラ…
+[usage] RunUsage(cost=Decimal('0.0006348'), details={'text_prompt_tokens': 941}, input_text_tokens=941, input_tokens=941, output_tokens=141, requests=2, tool_calls=1)
